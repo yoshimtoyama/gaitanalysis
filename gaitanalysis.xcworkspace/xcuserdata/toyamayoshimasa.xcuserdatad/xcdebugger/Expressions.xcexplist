@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DetailChoiceMulti.viewWillDisappear(_:):DetailChoiceMulti.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailPersonalInfoInputList.tableView(_:cellForRowAt:):DetailPersonalInfoInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "target[&quot;value&quot;].asString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Login.viewDidLoad():Login.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "authButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailAssInputList.getInputValue(mstAss:):DetailAssInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inputAssList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailCustomerSelectSingle.tableView(_:didSelectRowAt:):DetailCustomerSelectSingle.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppCommon.getSynchronous(_:):AppCommon.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.loginUser">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailChoiceMulti.viewDidLoad():DetailChoiceMulti.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inputAss[i][&quot;commentInputFlg&quot;].asString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppCommon.postSynchronous(_:params:):AppCommon.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "req.httpBody">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailPersonalInfoInputList.viewDidLoad():DetailPersonalInfoInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.selectedUser">
+            </PersistentString>
+            <PersistentString
+               value = "personalInfo[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailChoiceMulti.tableView(_:cellForRowAt:):DetailChoiceMulti.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MasterUserList.clickAddCustomer(_:):MasterUserList.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MasterUserMenu.tableView(_:cellForRowAt:):MasterUserMenu.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DetailChoiceOne.viewWillDisappear(_:):DetailChoiceOne.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath == nil">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath != nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Setting.tableView(_:cellForRowAt:):Setting.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.loginUser![&quot;mailAddress&quot;].asString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailAssInputList.viewDidLoad():DetailAssInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mstInputAssList">
+            </PersistentString>
+            <PersistentString
+               value = "appDelegate.selectedMstAssSubGroup">
+            </PersistentString>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Login.authUI(_:didSignInWith:error:):Login.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AssCommon.getInputAssList():AssCommon.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.selectedAss">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailAssBasicInfo.setBasicInfo():DetailAssBasicInfo.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.selectedUser">
+            </PersistentString>
+            <PersistentString
+               value = "cellCustomerName.detailTextLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailChoiceMulti.tableView(_:didSelectRowAt:):DetailChoiceMulti.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedRow.contains(indexPath)">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailCustomerInputList.tableView(_:numberOfRowsInSection:):DetailCustomerInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.mstCustomerList!.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailAssSubGroupList.tableView(_:didSelectRowAt:):DetailAssSubGroupList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.selectedMstAssSubGroup">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Login.authUI(_:didSignInWith:error:):Login.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DetailAssInputList.viewDidLoad():DetailAssInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonStr">
+            </PersistentString>
+            <PersistentString
+               value = "appDelegate.mstAssList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailCustomerInputList.tableView(_:cellForRowAt:):DetailCustomerInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.mstCustomerList![0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AppCommon.postSynchronous(_:params:):AppCommon.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailCustomerSelectSingle.viewDidLoad():DetailCustomerSelectSingle.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate.selectedMstCustomer[&quot;itemChoices&quot;].asString!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MasterUserList.viewWillAppear(_:):MasterUserList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MasterUserList.tableView(_:cellForRowAt:):MasterUserList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "list[index]">
+            </PersistentString>
+            <PersistentString
+               value = "list[index][&quot;customerName&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailAssSubGroupList.getMstAssSubGroupList():DetailAssSubGroupList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "appDelegate">
+            </PersistentString>
+            <PersistentString
+               value = "appDelegate.mstMonshinAssSubGroupList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailAssInputList.viewWillAppear(_:):DetailAssInputList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inputAssList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
