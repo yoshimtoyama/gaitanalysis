@@ -148,16 +148,6 @@ class DetailChoiceOne: UITableViewController, DataReturn {
                 cell.accessoryType = UITableViewCell.AccessoryType.checkmark
                 tableView.deselectRow(at: indexPath, animated: true)
             }
-            
-            /*
-            if value == firstValue {
-                cell.isSelected = true
-                self.tableView!.selectRow(at: indexPath, animated: false, scrollPosition: .none)
-                cell.accessoryType = UITableViewCell.AccessoryType.checkmark
-                tableView.deselectRow(at: indexPath, animated: true)
-                selectedRow = indexPath
-            }
-            */
         }
 
         return cell
@@ -215,7 +205,6 @@ class DetailChoiceOne: UITableViewController, DataReturn {
         if(!btnCancel){
             let assCommon = AssCommon()
             // 選択されているインデックスを取得する
-            //let indexPath = super.tableView?.indexPathForSelectedRow
             if selectedRow != nil || commentInputText != ""  { // 選択されている（登録する場合）
                 //let cell = myTableView?.cellForRowAtIndexPath(indexPath!)
                 var inputArray : [String] = []
@@ -227,11 +216,6 @@ class DetailChoiceOne: UITableViewController, DataReturn {
                 if value != firstValue || firstComment != commentInputText {
                     var inputArray : [String] = []
                     inputArray.append(value)
-                    
-                   /* if (assCommon.regAss(controller: self, photoFlag: AppConst.Flag.OFF.rawValue, inputArray: inputArray, commentText: commentInputText)) {
-                        // 変更されているのでフラグを更新する
-                        appDelegate.changeInputAssFlagForList = true
-                    }*/
                     let row = appDelegate.arrChoiceOne.firstIndex(where: {$0.id == appDelegate.selectedMstAss["assItemId"].asInt! && $0.subGroupID == appDelegate.selectedMstAss["assMenuSubGroupId"].asInt!})
                     if (row != nil) {
                         appDelegate.arrChoiceOne[row!].oneChoice = inputArray

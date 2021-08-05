@@ -127,30 +127,6 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // DBに登録されている動画を全て取得する
-        // 新規登録 or 動画がない場合はnil
-        /*if videoFileListJSON != nil && (videoFileListJSON.length)! > 0 {
-            videoFileList = (videoFileListJSON.map{ $0.1 })!
-        }*/
-        
-        // 一旦全てのボタンを削除する
-       /* subViewButtons.forEach{
-            $0.removeFromSuperview()
-        }
-        subViewButtons = [] // 初期化
-        
-       // selectedSeqNo = nil
-        selectedSeqNo = 0*/
-        // 動画ボタンの追加
-      /*  if (appDelegate.videoContainerFrameOriginY == nil) {
-            appDelegate.videoContainerFrameOriginY = myContainer.frame.origin.y
-        }*/
-       /* if((videolist!.isNull) ){
-            //VideofromDB = showMovie(seq: selectedSeqNo)
-            //print(showMovie(seq: selectedSeqNo))
-            //print(VideofromDB)
-        }*/
     }
 
      func viewShouldDisappear(_ animated: Bool) {
@@ -170,7 +146,6 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
         // 遷移
-        //performSegue(withIdentifier: "SegueVideoRecord",sender: self)
         VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
     }
     /*
@@ -178,7 +153,6 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
      */
     func showMovie(seq: Int?) -> Bool {
         var isEnabled = false
-        
         // 表示対象が存在しない場合代替画像を表示
         if seq == nil {
             let imageView = UIImageView(image: UIImage(named: "noimage.jpg"))
@@ -186,7 +160,6 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
             myContainer.addSubview(imageView)
             return isEnabled
         }
-        
         // 選択されたら太字
         subViewButtons.forEach{
             $0.titleLabel!.font = UIFont(name: "Helvetica",size: CGFloat(20))
@@ -196,36 +169,29 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
         }
         let asset = NSDataAsset(name: "media1")
-
         isEnabled = true
-        
         // start recording
         let tmpPath = NSTemporaryDirectory()
         // ファイル名.
         let filePath = "\(tmpPath)tmp.mp4"
         // URL.
         let fileURL = URL(fileURLWithPath: filePath)
-        
         do {
             try asset!.data.write(to: fileURL)
         } catch let error as NSError {
             print("failed to write: \(error)")
         }
         let avAsset = AVURLAsset(url: fileURL)
-        
         // AVPlayerに再生させるアイテムを生成.
         playerItem = AVPlayerItem(asset: avAsset)
         // AVPlayerを生成.
         videoPlayer = AVPlayer(playerItem: playerItem)
-        
         let playerViewController = AVPlayerViewController()
         playerViewController.player = videoPlayer
         displayContentController(content: playerViewController, container: myContainer)
-        
-        //        }
-        
         return isEnabled
     }
+    
     func displayContentController(content:UIViewController, container:UIView){
         addChild(content)
         content.view.frame = container.bounds
@@ -259,30 +225,8 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.effectView.isHidden = false
         self.grayOutView.isHidden = false
         encodeVideo(at: url)
-        // Change File type to .MOV to .mp4、DBで動画保存する
     }
-/*
-    @objc func video(
-      _ videoPath: String,
-      didFinishSavingWithError error: Error?,
-      contextInfo info: AnyObject
-    ) {
-      let title = (error == nil) ? "Success" : "Error"
-      let message = (error == nil) ? "Video was saved" : "Video failed to save"
 
-      let alert = UIAlertController(
-        title: title,
-        message: message,
-        preferredStyle: .alert)
-      alert.addAction(UIAlertAction(
-        title: "OK",
-        style: UIAlertAction.Style.cancel,
-        handler: nil))
-      present(alert, animated: true, completion: nil)
-    }
-    
-    */
-    
     // Don't forget to import AVKit
     func encodeVideo(at videoURL: URL) {
         
@@ -368,37 +312,35 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     // 削除ボタン
     @IBAction func ClickDelete(_ sender: AnyObject) {
-        print(VideofromDB)
-        print(openPickerView)
         if(VideofromDB == true || openPickerView == true){
-            let alertController = UIAlertController(title: "確認", message: "動画を削除しますか？", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "削除", style: UIAlertAction.Style.default, handler:{ [self]
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                deleteMovie()
-            })
-            let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
-                // ボタンが押された時の処理を書く（クロージャ実装）
-                (action: UIAlertAction!) -> Void in
-                print("キャンセル")
-            })
+                let alertController = UIAlertController(title: "確認", message: "動画を削除しますか？", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "削除", style: UIAlertAction.Style.default, handler:{ [self]
+                    // ボタンが押された時の処理を書く（クロージャ実装）
+                    (action: UIAlertAction!) -> Void in
+                    deleteMovie()
+                })
+                let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style:  UIAlertAction.Style.cancel, handler:{
+                    // ボタンが押された時の処理を書く（クロージャ実装）
+                    (action: UIAlertAction!) -> Void in
+                })
                 
                 // addActionした順に左から右にボタンが配置
-            alertController.addAction(cancelAction)
+                alertController.addAction(cancelAction)
+                alertController.addAction(okAction)
+                present(alertController, animated: true, completion: nil)
+            }else{
+                let alertController = UIAlertController(title: "確認", message: "削除するため動画ありません。", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ [self]
+                // ボタンが押された時の処理を書く（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+            })
+            // addActionした順に左から右にボタンが配置
             alertController.addAction(okAction)
             present(alertController, animated: true, completion: nil)
-        }else{
-            let alertController = UIAlertController(title: "確認", message: "削除するため動画ありません。", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ [self]
-            // ボタンが押された時の処理を書く（クロージャ実装）
-            (action: UIAlertAction!) -> Void in
-        })
-        // addActionした順に左から右にボタンが配置
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
+        }
     }
-}
     
+    // 動画消すkoto
     func deleteMovie(){
         print (selectedSeqNo as Any)
         activityIndicator("動画削除中")
@@ -409,7 +351,6 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
             let seqno = videolist![0]["seqno"].asInt!
             let url = "\(AppConst.URLPrefix)ass/DeleteAssessmentDT/\(appDelegate.selectedUser["customerID"].asInt!)/\(appDelegate.selectedAss["assId"].asInt!)/\(appDelegate.selectedMstAss["assMenuGroupId"].asInt!)/\(appDelegate.selectedMstAss["assMenuSubGroupId"].asInt!)/\(appDelegate.selectedMstAss["assItemId"].asInt!)/\(seqno)"
-            let result = self.appCommon.deleteSynchronous(url)
         let row = appDelegate.arrMediaList.firstIndex(where: {$0.id == appDelegate.selectedMstAss["assItemId"].asInt! && $0.subGroupID == appDelegate.selectedMstAss["assMenuSubGroupId"].asInt!})
             appDelegate.arrMediaList[row!].flgSave = false
         VideofromDB = false

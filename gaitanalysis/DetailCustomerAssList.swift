@@ -11,7 +11,6 @@ import UIKit
 class DetailCustomerAssList: UITableViewController {
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     let appCommon = AppCommon()
-    // var list: [JSON]!
     var hdList: JSON!
 
     
@@ -30,8 +29,6 @@ class DetailCustomerAssList: UITableViewController {
         // 利用者のアセスメントHDリストを取得する
         getCustomerHDList()
         getMstAssSubGroupList()
-        // 日付降順に並べる
-        // list = temp.enumerated().sorted{ $0.element.1["assDate"].asString! > $1.element.1["assDate"].asString! }.map{ $0.element.1 }
     }
     // 画面が表示される都度
     override func viewWillAppear(_ animated: Bool) {
@@ -54,10 +51,8 @@ class DetailCustomerAssList: UITableViewController {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "MyCell")
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator // 詳細矢印
         let index = (indexPath as NSIndexPath).row
-        
         cell.textLabel?.text = "\(AppCommon.convertDateStringFromServerDate(fromDateString: hdList[index]["assDate"].asString!, format: "yyyy-MM-dd"))"
         cell.detailTextLabel?.text = "レポート：\(AppCommon.getAssStatusString(assStatus: hdList[index]["assStatus"].asString!))"
-        
         return cell
     }
     
@@ -78,9 +73,6 @@ class DetailCustomerAssList: UITableViewController {
     @IBAction func clickAddAss(_ sender: Any) {
         addCustomerHD()
     }
-    
-    
-   
     
     func getCustomerHDList() {
         // AssHDの取得

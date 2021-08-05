@@ -143,12 +143,6 @@ class DetailChoiceMulti: UITableViewController, DataReturn {
             cell = UITableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: "MyCell")
             cell.textLabel?.text = view
             cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
-            /*
-            if firstValues.contains(value) {
-                cell.isSelected = true
-                self.tableView!.selectRow(at: indexPath, animated: false, scrollPosition: .none)
-            }
-            */
             cell.detailTextLabel?.text = commentInputText
         } else { // その他入力以外
             cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "MyCell")
@@ -205,10 +199,6 @@ class DetailChoiceMulti: UITableViewController, DataReturn {
                 }
                 // 数が違うか、要素が違うか、コメント変更されている場合
                 if firstValues.count != selectedRows.count || !isAllContains || firstComment != commentInputText  {
-                    /*if assCommon.regAss(controller: self, photoFlag: AppConst.Flag.OFF.rawValue, inputArray: inputArray, commentText: commentInputText) {
-                        // 変更されているのでフラグを更新する
-                        appDelegate.changeInputAssFlagForList = true
-                    }*/
                     let row = appDelegate.arrChoiceMulti.firstIndex(where: {$0.id == appDelegate.selectedMstAss["assItemId"].asInt! && $0.subGroupID == appDelegate.selectedMstAss["assMenuSubGroupId"].asInt!})
                     if (row != nil) {
                         appDelegate.arrChoiceMulti[row!].multiChoice = inputArray
