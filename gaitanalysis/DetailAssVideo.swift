@@ -73,12 +73,6 @@ class DetailAssVideo: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.effectView.isHidden = true
         self.grayOutView.isHidden = true
         
-        //play url with your AVPlayer
-       /* getMstAssList()
-        let gid = appDelegate.selectedMstAssSubGroup["assMenuGroupId"].asInt!
-        let sid = appDelegate.selectedMstAssSubGroup["assMenuSubGroupId"].asInt!
-        let list = appDelegate.mstAssList!.enumerated().filter{ $0.element.1["assMenuGroupId"].asInt! == gid && $0.element.1["assMenuSubGroupId"].asInt! == sid }.map{ $0.element.1 }*/
-        
     }
     
     func showVideoFromServer() {

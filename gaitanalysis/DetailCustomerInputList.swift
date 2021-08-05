@@ -13,8 +13,6 @@ class DetailCustomerInputList: UITableViewController {
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     let appCommon = AppCommon()
     var personalInfo: JSON!
-    //let columnNameList: [NSString] = ["LastName", "FirstName", "Gender", "Birthday"]
-    //let textList: [NSString] = ["姓", "名", "性別", "生年月日"]
     var list: [JSON]!
     
     
@@ -35,16 +33,6 @@ class DetailCustomerInputList: UITableViewController {
         // 利用者情報の取得
         getCustomerInfo()
         
-        
-        // var jsonStr = AppCommon.getResourceString(forResource: "personalInfo", ofType: "json")
-        // personalInfo = JSON(string: jsonStr) // JSON読み込み
-        
-        // jsonStr = AppCommon.getResourceString(forResource: "mstPersonalAssList", ofType: "json")
-        // let tempList = JSON(string: jsonStr) // JSON読み込み
-        // let gid = 1
-        // let sid = 1
-        // 絞り込み
-        // list = tempList.enumerated().filter{ $0.element.1["assmenuGroupId"].asInt! == gid && $0.element.1["assMenuSubGroupId"].asInt! == sid}.map{ $0.element.1 }
         
     }
     func getCustomerInfo() {
@@ -109,18 +97,6 @@ class DetailCustomerInputList: UITableViewController {
             }
         }
         cell.detailTextLabel?.text = value
-        
-        /*
-        let columnName = columnNameList[index] as String
-        let target = personalInfo.enumerated().filter{ $0.element.1["columnName"].asString! == columnName}.map{ $0.element.1 }.first!
-        
-        
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: "MyCell")
-        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator // 詳細矢印
-        cell.textLabel?.text = textList[index] as String
-        cell.detailTextLabel?.text = target["value"].asString == nil ? "" : target["value"].asString!
-        */
- 
         return cell
     }
     
@@ -146,40 +122,5 @@ class DetailCustomerInputList: UITableViewController {
         } else if inputKB == AppConst.InputKB.BIRTHDAY.rawValue {
             performSegue(withIdentifier: "SegueCustomerSelectDate",sender: self)
         }
-
-        /*
-        if index == 0 {
-            // 表示する詳細を設定する
-            appDelegate.viewDetailText = personalInfo["lastName"].asString!
-            appDelegate.viewDatailUnit = ""
-            // 遷移
-            performSegue(withIdentifier: "SegueTextInput",sender: self)
-        } else if index == 1 {
-            // 表示する詳細を設定する
-            appDelegate.viewDetailText = personalInfo["firstName"].asString!
-            appDelegate.viewDatailUnit = ""
-            // 遷移
-            performSegue(withIdentifier: "SegueTextInput",sender: self)
-        } else if index == 2 {
-            // 表示する詳細を設定する
-            appDelegate.viewDetailText = personalInfo["sex"].asString!
-            // 遷移
-            performSegue(withIdentifier: "SegueOneChoice",sender: self)
-        } else if index == 3 {
-            // 表示する詳細を設定する
-            appDelegate.viewDetailText = personalInfo["birthDay"].asString!
-            // 遷移
-            performSegue(withIdentifier: "SegueDateSelect",sender: self)
-        }
-        */
-
-        
-        //        let cell = tableView.cellForRow(at: indexPath)
-        //let index = (indexPath as NSIndexPath).row
-        // 選択された利用者情報を保存する。
-        //appDelegate.selectedUser = list[index]
-        // 遷移
-        //performSegue(withIdentifier: "SegueUserMenu",sender: self)
-        
     }
 }
