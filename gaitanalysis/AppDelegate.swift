@@ -47,10 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //Schema情報取得したテータ
     var inputAssList: JSON!
     
-
     /********************Event画面で利用 start ********************/
     var eventList: JSON!
-    
     var window: UIWindow?
     
     // ログイン情報
@@ -118,26 +116,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var changeInputAssFlagForList: Bool = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        // FirebaseApp.configure() //Firebaseの機能を使う際は必須
-
-
-        // Override point for customization after application launch.
-        
-        /*
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-        splitViewController.delegate = self
-
-        let masterNavigationController = splitViewController.viewControllers[0] as! UINavigationController
-        let controller = masterNavigationController.topViewController as! MasterViewController
-        controller.managedObjectContext = self.persistentContainer.viewContext
-        */
-        
-        // Client IDを設定する
-        //GIDSignIn.sharedInstance()?.clientID = "464697760716-sukofokcompt0g025s1pc5knko80eb4u.apps.googleusercontent.com"
-        
         return true
     }
 
@@ -164,7 +142,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         appCommon.saveAssessment(controller: (self.window?.rootViewController)!)
-        // Clear Data
+        // データリセット
         self.arrChoiceMulti.removeAll()
         self.arrChoiceOne.removeAll()
         self.arrinputAccText.removeAll()

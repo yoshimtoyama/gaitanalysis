@@ -28,7 +28,6 @@ class DetailAssInputOtherText: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // フォーカスを当てる
         textFieldOtherText.becomeFirstResponder()
-
         // ラベル
         labelOtherText.text = otherViewText
         // テキスト入力

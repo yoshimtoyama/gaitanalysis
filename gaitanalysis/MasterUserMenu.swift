@@ -13,8 +13,6 @@ class MasterUserMenu: UITableViewController {
     let appCommon = AppCommon()
     let personalItems: NSArray = ["利用者基本情報設定"]
     let assessmentItems: NSArray = ["アセスメント"]
-   // let referralItems: NSArray = ["その他施設に紹介"]
-    //let sections: NSArray = ["利用者情報", "アセスメント情報","紹介"]
     let sections: NSArray = ["利用者情報", "アセスメント情報"]
     var backButton : UIBarButtonItem!
     
@@ -36,9 +34,6 @@ class MasterUserMenu: UITableViewController {
         // Replace the default back button
         self.navigationItem.setHidesBackButton(true, animated: false)
         self.backButton = UIBarButtonItem(title: "利用者一覧", style: UIBarButtonItem.Style.plain, target: self, action: #selector(goBack))
-        /*let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20));
-        imageView.image = UIImage(named: "icons8-back-100")
-        self.backButton.image = UIImage(named: "icons8-back-100")*/
         self.navigationItem.leftBarButtonItem = backButton
     }
     
@@ -60,6 +55,7 @@ class MasterUserMenu: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[section] as? String
     }
+    
     /*
      テーブルに表示する配列の総数を返す.
      */
@@ -68,9 +64,7 @@ class MasterUserMenu: UITableViewController {
             return personalItems.count
         } else if section == 1 {
             return assessmentItems.count
-        }/* else if section == 2 {
-            return referralItems.count
-        } */else {
+        }else {
             return 0
         }
     }
@@ -87,11 +81,7 @@ class MasterUserMenu: UITableViewController {
             let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "MyCell")
             cell.textLabel?.text = "\(assessmentItems[index.row])"
             return cell
-        } /*else if index.section == 2 {
-            let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "MyCell")
-            cell.textLabel?.text = "\(referralItems[index.row])"
-            return cell
-        }*/ else  {
+        } else  {
             let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "MyCell")
             return cell
         }
@@ -107,16 +97,11 @@ class MasterUserMenu: UITableViewController {
         if(appDelegate.changeInputAssFlagForList == false){
             setdataTotable(rowid: index as IndexPath)
         }
-            
-        // 選択を外す
-        //self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func setdataTotable(rowid : IndexPath){
         if rowid.section == 0 {
             print("利用者情入力")
-            // 遷移
-            // performSegue(withIdentifier: "SeguePersonalInfo",sender: self)
             // 詳細を変更
             AppCommon.changeDetailView(sb: storyboard!, sv: splitViewController!, storyBoardID: "PersonalInfo")
             return
@@ -161,7 +146,8 @@ class MasterUserMenu: UITableViewController {
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
     }
-    //Press backbutton
+    
+    //戻る機能
     @objc func goBack() {
         // Here we just remove the back button, you could also disabled it or better yet show an activityIndicator
         if(appDelegate.changeInputAssFlagForList == true){
@@ -197,12 +183,4 @@ class MasterUserMenu: UITableViewController {
         }
        
     }
-    /*override func viewWillDisappear(_ animated: Bool) {
-        
-        super.viewWillDisappear(animated)
-        if self.isMovingFromParent{
-            
-        }
-    }*/
-        
 }

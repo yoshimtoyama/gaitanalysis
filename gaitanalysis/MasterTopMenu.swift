@@ -12,7 +12,6 @@ class MasterTopMenu: UITableViewController {
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     
     // Personal利用
-    //let personalItems: NSArray = ["利用者情報"]
     let personalUserItems: NSArray = ["利用者一覧"]
     let personalSections: NSArray = ["利用者", "イベント", "施設利用"]
     let personalFacilityItems: NSArray = ["施設利用"]
@@ -78,6 +77,7 @@ class MasterTopMenu: UITableViewController {
             }
         }
     }
+    
     /*
      Cellに値を設定する.
      */
@@ -117,7 +117,6 @@ class MasterTopMenu: UITableViewController {
         }
     }
     
-    
     /*
      Cellが選択された際に呼び出される.
      */
@@ -128,10 +127,6 @@ class MasterTopMenu: UITableViewController {
                 print("利用者一覧")
                 // 遷移
                 performSegue(withIdentifier: "SegueUserList",sender: self)
-                // 詳細を変更
-                //AppCommon.changeDetailView(sb: storyboard!, sv: splitViewController!, storyBoardID: "UserList")
-                // 詳細を変更
-               
                 return
                 
             } else if index.section == 1 {
@@ -141,7 +136,6 @@ class MasterTopMenu: UITableViewController {
                 return
             } else if index.section == 2 {
                 print("ログアウト")
-                
                 // アラートアクションの設定
                 var actionList = [(title: String , style: UIAlertAction.Style ,action: (UIAlertAction) -> Void)]()
                 // キャンセルアクション
@@ -156,21 +150,18 @@ class MasterTopMenu: UITableViewController {
                 )
                 // OKアクション
                 actionList.append(
-                    (
-                        title: "OK",
-                        style: UIAlertAction.Style.default,
-                        action: {
-                            (action: UIAlertAction!) -> Void in
-                            print("OK")
+                (
+                    title: "OK",
+                    style: UIAlertAction.Style.default,
+                    action: {
+                        (action: UIAlertAction!) -> Void in
+                        AppCommon.facilityLout(view:self)
                             
-                            AppCommon.facilityLout(view:self)
-                            
-                            // 詳細を変更
-                            AppCommon.changeDetailView(sb: self.storyboard!, sv: self.splitViewController!, storyBoardID: "Blank")
+                        // 詳細を変更
+                        AppCommon.changeDetailView(sb: self.storyboard!, sv: self.splitViewController!, storyBoardID: "Blank")
                     })
                 )
                 AppCommon.alertAnyAction(controller: self, title: "確認", message: "施設利用を終了しますか？", actionList: actionList)
-                
                 return
             }
         } else { // 個人利用
@@ -193,8 +184,5 @@ class MasterTopMenu: UITableViewController {
                 return
             }
         }
-        // 選択を外す
-        //self.tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }

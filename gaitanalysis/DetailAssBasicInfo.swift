@@ -22,9 +22,6 @@ class DetailAssBasicInfo: UITableViewController {
     @IBOutlet weak var cellAssReportRequestDate: UITableViewCell!
     @IBOutlet weak var cellAssReportCreatedDate: UITableViewCell!
     
-    
-    //var helpButton = UIBarButtonItem(title: "動画再生ボタン", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.clickHelpButton(_:)))
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // 基本情報を設定
@@ -32,23 +29,21 @@ class DetailAssBasicInfo: UITableViewController {
 
         onTapViewContoroller()
     }
+    
     @objc func clickHelpButton(_ sender: UIBarButtonItem){
         //helpButtonを押した際の処理を記述
         print("clickHelpButton")
-        
-        // performSegue(withIdentifier: "SegueHelp",sender: self)
         
         // ViewHelp
         let storyboard: UIStoryboard = self.storyboard!
         let helpView = storyboard.instantiateViewController(withIdentifier: "ViewHelp")
         helpView.modalPresentationStyle = .popover
         helpView.popoverPresentationController?.barButtonItem = sender
-        helpView.popoverPresentationController?.permittedArrowDirections = .up // 矢印の向きを制限する場合
-        
+        helpView.popoverPresentationController?.permittedArrowDirections = .up
+        // 矢印の向きを制限する場合
         self.present(helpView, animated: true, completion: nil)
-        
-        
     }
+    
     // タブがタップされた時実行される
     func onTapViewContoroller() {
         // 戻るボタン用のタイトル設定（Tabbar直後の画面だけbackになってしまうため)
@@ -56,7 +51,6 @@ class DetailAssBasicInfo: UITableViewController {
         // 右上にボタン追加
         let helpButton = UIBarButtonItem(title: "アセスメント入力方法", style: UIBarButtonItem.Style.plain, target: self, action: #selector(clickHelpButton(_:)))
         navigationController!.navigationBar.topItem!.setRightBarButtonItems([helpButton], animated: true)
-
     }
     
     func setBasicInfo() {
@@ -72,26 +66,12 @@ class DetailAssBasicInfo: UITableViewController {
         let DateString = appDelegate.selectedAss["createDateTime"].asString!
         let utcDate = utcISODateFormatter.date(from:DateString)
         cellAssCreateDate.detailTextLabel?.text = "\(AppCommon.convertDateStringFromServerDate(fromDateString: utcISODateFormatter.string(from: utcDate!), format: "yyyy-MM-dd"))"
-        
         cellAssStatus.detailTextLabel?.text = AppCommon.getAssStatusString(assStatus: appDelegate.selectedAss["assStatus"].asString!)
-        
         cellAssReportRequestDate.detailTextLabel?.text = appDelegate.selectedAss["reportRequestDate"].asString == nil ? "" : "\(AppCommon.convertDateStringFromServerDate(fromDateString: appDelegate.selectedAss["reportRequestDate"].asString, format: "yyyy-MM-dd"))"
-        
-        
         cellAssReportCreatedDate.detailTextLabel?.text = appDelegate.selectedAss["reportCreatedDate"].asString == nil ? "" : "\(AppCommon.convertDateStringFromServerDate(fromDateString: appDelegate.selectedAss["reportCreatedDate"].asString, format: "yyyy-MM-dd"))"
         
         
     }
-    
-    /*
-    func getAssBasicInfo() {
-        // AssHDの取得
-        let url = "\(AppConst.URLPrefix)ass/GetAssHD/\(appDelegate.selectedUser["customerID"].asInt!)/\(appDelegate.selectedAss["assId"].asInt!)"
-        let jsonStr = self.appCommon.getSynchronous(url)
-        assHD = JSON(string: jsonStr!) // JSON読み込み
-    }
-    */
-    
 }
 extension DetailAssBasicInfo: TabBarDelegate {
     func didSelectTab(tabBarController: UITabBarController) {

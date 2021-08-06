@@ -82,9 +82,9 @@ class DetailAssPhoto: UIViewController, UIImagePickerControllerDelegate, UINavig
         appDelegate.photoAssList = assCommon.getInputAssList()
         if(appDelegate.photoAssList!.length != 0){
             lblnoImage.isHidden = true
-            // Default seqno
+            // SeqnoをDefault０にセット
             selectedSeqNo = 0
-            //Show Button
+            //Button数設定すること
             btnCount = appDelegate.photoAssList!.length
             // add post array to photo list
             for i in 0..<appDelegate.photoAssList!.length{
@@ -154,10 +154,10 @@ class DetailAssPhoto: UIViewController, UIImagePickerControllerDelegate, UINavig
         } else {
             print("error with base64String")
         }
-    
         return returnimage!
     }
     
+    //習得とか選択とかからもらった画像をViewで設定
     func setPhotoList(_seqnoid : Int)  {
         if(isopenImagePicker){
             //選択された画像をArrayで設定
@@ -505,6 +505,5 @@ class DetailAssPhoto: UIViewController, UIImagePickerControllerDelegate, UINavig
         // show the alert
         self.present(alert, animated: true, completion: nil)
     }
-    
 }
 

@@ -62,8 +62,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "getInputValue(mstAss:)"
             landmarkType = "7">
             <Locations>
@@ -586,8 +586,8 @@
             filePath = "gaitanalysis/Login.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -982,8 +982,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1044,10 +1044,10 @@
             filePath = "gaitanalysis/DetailAssBasicInfo.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "onTapViewContoroller()"
-            landmarkType = "7">
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "DetailAssBasicInfo"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1076,8 +1076,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1142,7 +1142,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "182"
             endingLineNumber = "182"
-            landmarkName = "pickImageFromLibrary(_:)"
+            landmarkName = "setPhotoList(_seqnoid:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1158,7 +1158,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "181"
             endingLineNumber = "181"
-            landmarkName = "pickImageFromLibrary(_:)"
+            landmarkName = "setPhotoList(_seqnoid:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1174,7 +1174,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "getPhotoAssessmentList()"
+            landmarkName = "activityIndicator(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1190,7 +1190,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
             endingLineNumber = "126"
-            landmarkName = "getPhotoAssessmentList()"
+            landmarkName = "activityIndicator(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1204,8 +1204,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1220,8 +1220,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1254,7 +1254,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "206"
             endingLineNumber = "206"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkName = "pickImageFromLibrary(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1270,7 +1270,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "225"
             endingLineNumber = "225"
-            landmarkName = "createButton()"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1318,7 +1318,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "205"
             endingLineNumber = "205"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkName = "pickImageFromLibrary(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1398,8 +1398,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "219"
             endingLineNumber = "219"
-            landmarkName = "createButton()"
-            landmarkType = "7">
+            landmarkName = "DetailAssPhoto"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1414,7 +1414,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "283"
             endingLineNumber = "283"
-            landmarkName = "onClickPhotoButton(_:)"
+            landmarkName = "createButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1462,8 +1462,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "297"
             endingLineNumber = "297"
-            landmarkName = "onClickPhotoButton(_:)"
-            landmarkType = "7">
+            landmarkName = "DetailAssPhoto"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1478,7 +1478,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "207"
             endingLineNumber = "207"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkName = "pickImageFromLibrary(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1494,8 +1494,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "298"
             endingLineNumber = "298"
-            landmarkName = "onClickPhotoButton(_:)"
-            landmarkType = "7">
+            landmarkName = "DetailAssPhoto"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1588,8 +1588,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "getInputValue(mstAss:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1766,7 +1766,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "460"
             endingLineNumber = "460"
-            landmarkName = "viewWillDisappear(_:)"
+            landmarkName = "willMove(toParent:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1926,7 +1926,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
             endingLineNumber = "127"
-            landmarkName = "getPhotoAssessmentList()"
+            landmarkName = "activityIndicator(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2134,7 +2134,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "409"
             endingLineNumber = "409"
-            landmarkName = "ClickCamera(_:)"
+            landmarkName = "deletePhoto()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2182,7 +2182,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "413"
             endingLineNumber = "413"
-            landmarkName = "selectImageFrom(_:)"
+            landmarkName = "deletePhoto()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2198,8 +2198,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "217"
             endingLineNumber = "217"
-            landmarkName = "DetailAssPhoto"
-            landmarkType = "3">
+            landmarkName = "picArray"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2364,8 +2364,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -2427,8 +2427,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2443,8 +2443,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2459,41 +2459,9 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "DetailAssInputList"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "83A010DB-18DC-40D8-8558-D3322575996E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/DetailAssInputList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D9D06447-67C0-4B20-A76E-76C61A8E9324"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/DetailAssInputList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2507,8 +2475,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2523,10 +2491,10 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "DetailAssInputList"
-            landmarkType = "3">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "viewWillDisappear(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2573,7 +2541,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
             endingLineNumber = "128"
-            landmarkName = "getPhotoAssessmentList()"
+            landmarkName = "activityIndicator(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2589,7 +2557,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "289"
             endingLineNumber = "289"
-            landmarkName = "onClickPhotoButton(_:)"
+            landmarkName = "createButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2605,7 +2573,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "211"
             endingLineNumber = "211"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkName = "navigationController(_:willShow:animated:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2621,7 +2589,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
             endingLineNumber = "153"
-            landmarkName = "setPhotoList(_seqnoid:)"
+            landmarkName = "getPhotoAssessmentList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2637,7 +2605,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
             endingLineNumber = "156"
-            landmarkName = "setPhotoList(_seqnoid:)"
+            landmarkName = "getPhotoAssessmentList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2653,7 +2621,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "464"
             endingLineNumber = "464"
-            landmarkName = "viewWillDisappear(_:)"
+            landmarkName = "willMove(toParent:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2701,7 +2669,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "463"
             endingLineNumber = "463"
-            landmarkName = "viewWillDisappear(_:)"
+            landmarkName = "willMove(toParent:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2890,8 +2858,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "getInputValue(mstAss:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2906,8 +2874,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "getInputValue(mstAss:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2922,8 +2890,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "getInputValue(mstAss:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3066,8 +3034,8 @@
             filePath = "gaitanalysis/MasterTopMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3116,7 +3084,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
-            landmarkName = "activityIndicator(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3212,7 +3180,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "294"
             endingLineNumber = "294"
-            landmarkName = "onClickPhotoButton(_:)"
+            landmarkName = "createButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3228,7 +3196,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "295"
             endingLineNumber = "295"
-            landmarkName = "onClickPhotoButton(_:)"
+            landmarkName = "createButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3244,7 +3212,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "148"
             endingLineNumber = "148"
-            landmarkName = "setPhotoList(_seqnoid:)"
+            landmarkName = "getPhotoAssessmentList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3260,7 +3228,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "284"
             endingLineNumber = "284"
-            landmarkName = "onClickPhotoButton(_:)"
+            landmarkName = "createButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3340,8 +3308,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
-            landmarkName = "setPhotoList(_seqnoid:)"
-            landmarkType = "7">
+            landmarkName = "DetailAssPhoto"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3354,8 +3322,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3370,8 +3338,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3420,7 +3388,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "292"
             endingLineNumber = "292"
-            landmarkName = "onClickPhotoButton(_:)"
+            landmarkName = "createButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3516,7 +3484,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "376"
             endingLineNumber = "376"
-            landmarkName = "deletePhoto()"
+            landmarkName = "ClickDelete(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -3564,7 +3532,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "384"
             endingLineNumber = "384"
-            landmarkName = "deletePhoto()"
+            landmarkName = "ClickDelete(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3596,8 +3564,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "385"
             endingLineNumber = "385"
-            landmarkName = "deletePhoto()"
-            landmarkType = "7">
+            landmarkName = "DetailAssPhoto"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3628,8 +3596,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "427"
             endingLineNumber = "427"
-            landmarkName = "viewWillDisappear(_:)"
-            landmarkType = "7">
+            landmarkName = "ImageSource"
+            landmarkType = "13">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -3674,8 +3642,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3690,8 +3658,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3882,8 +3850,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3914,8 +3882,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3978,24 +3946,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "viewWillDisappear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A574C61A-6E2B-4B0C-9FB6-74F1D766B99B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/DetailAssInputList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4004,22 +3956,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ACB23F37-70E0-4A96-8F79-087046BDE34D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/MasterTopMenu.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "88A738D2-D163-4F0C-A7D7-3579DA703DC9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -4035,6 +3971,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "88A738D2-D163-4F0C-A7D7-3579DA703DC9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gaitanalysis/MasterTopMenu.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "AD6A7365-42D3-403A-B959-14B7D9FDC5DC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -4042,8 +3994,8 @@
             filePath = "gaitanalysis/MasterTopMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4058,8 +4010,8 @@
             filePath = "gaitanalysis/MasterTopMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4074,10 +4026,10 @@
             filePath = "gaitanalysis/MasterUserMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "MasterUserMenu"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4090,42 +4042,10 @@
             filePath = "gaitanalysis/MasterUserMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "273365DA-AA31-470A-BC13-518575540A53"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/MasterUserMenu.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
-            landmarkName = "MasterUserMenu"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "36AC434B-7CE5-4685-8131-E1342EC49F47"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/MasterUserMenu.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "MasterUserMenu"
-            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4138,8 +4058,8 @@
             filePath = "gaitanalysis/MasterUserMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "goBack()"
             landmarkType = "7">
          </BreakpointContent>
@@ -4154,8 +4074,8 @@
             filePath = "gaitanalysis/MasterUserMenu.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -4252,7 +4172,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
             endingLineNumber = "132"
-            landmarkName = "getPhotoAssessmentList()"
+            landmarkName = "activityIndicator(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -4268,131 +4188,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
             endingLineNumber = "131"
-            landmarkName = "getPhotoAssessmentList()"
+            landmarkName = "activityIndicator(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gaitanalysis/DetailAssGroupList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "DetailAssGroupList"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - e78f972606f09bc1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.__deallocating_deinit"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - 5a68285fd965d8c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.__allocating_init(style: __C.UITableViewStyle) -&gt; gaitanalysis.DetailAssGroupList"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - 3eb40a6d61b41de0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.init(style: __C.UITableViewStyle) -&gt; gaitanalysis.DetailAssGroupList"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "119">
-               </Location>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - a900df3dbf397c36"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; gaitanalysis.DetailAssGroupList"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - c33bd6ed701157aa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; gaitanalysis.DetailAssGroupList"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "386">
-               </Location>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - 8c9ac6914f2a3d01"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;gaitanalysis.DetailAssGroupList&gt;"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "A60A91E4-9174-42FE-8419-BAF238D33A12 - b0367263f3db20b1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "gaitanalysis.DetailAssGroupList.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;gaitanalysis.DetailAssGroupList&gt;"
-                  moduleName = "gaitanalysis"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/toyamayoshimasa/Documents/XCodeProjects/gaitanalysis/gaitanalysis/DetailAssGroupList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "239">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4437,8 +4234,8 @@
             filePath = "gaitanalysis/DetailAssInputList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>

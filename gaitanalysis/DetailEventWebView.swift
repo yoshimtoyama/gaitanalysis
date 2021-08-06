@@ -41,5 +41,4 @@ class DetailEventWebView: UIViewController, UINavigationControllerDelegate {
             webView.loadHTMLString("<div style=\"position: fixed; top: 40%; left: 25%;\"><p style=\"font-family: courier; font-size: 25;\"> Web公開情報が設定されていません </p></div>", baseURL: nil)
         }
     }
-
 }

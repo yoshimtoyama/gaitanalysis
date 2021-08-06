@@ -36,16 +36,16 @@ class DetailAssInputListPhotoMovie: UITableViewController {
         getMovieFileInput()
     }
     
+    // マスタデータの取得
     func getMstAssList() {
         if appDelegate.mstAssList == nil {
-            // マスタデータの取得
             let url = "\(AppConst.URLPrefix)master/GetAllMstAssessmentList"
             let jsonStr = self.appCommon.getSynchronous(url)
             appDelegate.mstAssList = JSON(string: jsonStr!) // JSON読み込み
         }
     }
     
-    
+    // 動画と写真　あり・なしのためデータ取得「Bool Return」
     func getMovieFileInput() {
         let url = "\(AppConst.URLPrefix)ass/GetPhotoMovieFileInput/\(appDelegate.selectedUser["customerID"].asInt!)/\(appDelegate.selectedAss["assId"].asInt!)/"
         let jsonStr = self.appCommon.getSynchronous(url)
@@ -130,7 +130,7 @@ class DetailAssInputListPhotoMovie: UITableViewController {
     }
     
     func getInputValue(itemID: Int) -> Bool {
-            // ロード時に写真があるかどうか確認する
+        // ロード時に写真があるかどうか確認する
         if(appDelegate.arrMediaList.count == flagList?.length){
             let flitlist = appDelegate.arrMediaList.filter{$0.id == appDelegate.selectedMstAss["assItemId"].asInt! && $0.subGroupID == appDelegate.selectedMstAss["assMenuSubGroupId"].asInt!}
             return flitlist[0].flgSave
@@ -145,9 +145,10 @@ class DetailAssInputListPhotoMovie: UITableViewController {
                 }
             }
         }
-       
         return false
     }
+    
+    //Indicator View
     var activityIndicator = UIActivityIndicatorView()
     var strLabel = UILabel()
     let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))

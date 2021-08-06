@@ -25,26 +25,16 @@ class LoginView : UIViewController, UITextFieldDelegate, FUIAuthDelegate {
         FUIFacebookAuth(),
         FUIEmailAuth()
     ]
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textLoginID?.delegate = self
         textPassword?.delegate = self
-        
         textLoginID.becomeFirstResponder()
-        
         hideKeyboardWhenTappedAround() // テキストボックス以外をクリックした時にキーボードを隠す
-        
-        //ddddddtextPassword.isSecureTextEntry = true
-        
-        
         // authUIのデリゲート
         self.authUI.delegate = self
         self.authUI.providers = providers
-        //authButton.addTarget(self,action: #selector(self.authButtonTapped(sender:)),for: .touchUpInside)
-
     }
      
 
@@ -98,19 +88,6 @@ class LoginView : UIViewController, UITextFieldDelegate, FUIAuthDelegate {
     }
     
     @IBAction func clickLoginWithGoogle(_ sender: Any) {
-//        // デリゲートを設定
-//        GIDSignIn.sharedInstance()?.delegate = self
-//
-//        // ログイン画面の表示元を設定
-//        GIDSignIn.sharedInstance()?.presentingViewController = self
-//
-//        if GIDSignIn.sharedInstance()!.hasPreviousSignIn() {
-//            // 以前のログイン情報が残っていたら復元する
-//            GIDSignIn.sharedInstance()!.restorePreviousSignIn()
-//        } else {
-//            // 通常のログインを実行
-//            GIDSignIn.sharedInstance()?.signIn()
-//        }
         
         // FirebaseUIのViewの取得
         let authViewController = self.authUI.authViewController()
@@ -118,29 +95,6 @@ class LoginView : UIViewController, UITextFieldDelegate, FUIAuthDelegate {
         self.present(authViewController, animated: true, completion: nil)
 
     }
-    
-    
-    /* Sign in with Google */
-//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-//        if error == nil {
-//            // ログイン成功した場合
-//            print("signIned user email: \(user!.profile!.email!)")
-//            print("signIned user name: \(user!.profile!.name!)")
-//        } else {
-//            // ログイン失敗した場合
-//            print("error: \(error!.localizedDescription)")
-//
-//            let alertController = UIAlertController(title: "エラー", message: "ログインできませんでした。", preferredStyle: .alert)
-//            let okAction = UIAlertAction(title: "OK", style: .default) {
-//                action in NSLog("OKボタンが押されました")
-//            }
-//            alertController.addAction(okAction)
-//            present(alertController, animated: true, completion: nil)
-//
-//            self.dismissIndicator() // End Loading
-//            return
-//        }
-//    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if (textField == textLoginID) {
@@ -150,17 +104,11 @@ class LoginView : UIViewController, UITextFieldDelegate, FUIAuthDelegate {
         }
         return true
     }
+    
     //　認証画面から離れたときに呼ばれる（キャンセルボタン押下含む）
     public func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?){
         // 認証に成功した場合
         if error == nil {
-            
-            //self.performSegue(withIdentifier: "toNextView", sender: nil)
-            // ログインユーザの保存
-            // appDelegate.loginUser = user!
-            
-            
-            
             DispatchQueue.global(qos: .default).async {
                 Thread.sleep(forTimeInterval: 2)
                 // マスターの読み込み
@@ -171,13 +119,9 @@ class LoginView : UIViewController, UITextFieldDelegate, FUIAuthDelegate {
                     self.dismissIndicator() // End Loading
                 }
             }
-
-            
-            
         } else {
         //失敗した場合
             print("error")
         }
     }
-
 }

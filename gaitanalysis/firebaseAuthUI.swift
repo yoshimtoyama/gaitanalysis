@@ -12,7 +12,6 @@ import FirebaseUI
 
 class firebaseAuthUI: FUIAuthPickerViewController {
 
-
     override init(nibName: String?, bundle: Bundle?, authUI: FUIAuth) {
         super.init(nibName: "FUIAuthPickerViewController", bundle: bundle, authUI: authUI)
     }
@@ -26,8 +25,8 @@ class firebaseAuthUI: FUIAuthPickerViewController {
         setupUI()
 
     }
+    //LogoinPopUpにロゴ追加
     private func setupUI() {
-
         let scrollView = self.view.subviews[0]
         scrollView.backgroundColor = .clear
         let contentView = scrollView.subviews[0]
