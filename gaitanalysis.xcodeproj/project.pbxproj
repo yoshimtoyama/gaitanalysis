@@ -63,14 +63,12 @@
 		F413CD542567ACA5005F5DDF /* gaitanalysis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F413CD522567ACA4005F5DDF /* gaitanalysis.xcdatamodeld */; };
 		F426350E24F60D8B00F24154 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F426350D24F60D8B00F24154 /* AuthenticationServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F439C4722694491700D34F69 /* firebaseAuthUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439C4712694491700D34F69 /* firebaseAuthUI.swift */; };
-		F4834FE3267C820700ADA67C /* bodyFront.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4834FE2267C820600ADA67C /* bodyFront.jpg */; };
 		F486ADD22602178100CBD8DE /* DetailAssInputOtherText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486ADD12602178100CBD8DE /* DetailAssInputOtherText.swift */; };
 		F49A8C0B26A511170095EBF4 /* DetailMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A8C0A26A511160095EBF4 /* DetailMessage.swift */; };
 		F4AB1EFC23151506005A10C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AB1EFB23151506005A10C8 /* Assets.xcassets */; };
 		F4AB1F0A23151506005A10C8 /* gaitanalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB1F0923151506005A10C8 /* gaitanalysisTests.swift */; };
 		F4AB1F1523151506005A10C8 /* gaitanalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB1F1423151506005A10C8 /* gaitanalysisUITests.swift */; };
 		F4C33F092680EC6200113684 /* Rendition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C33F082680EC6200113684 /* Rendition.swift */; };
-		F4C537C826AFD76200C8A24D /* icons8-back-100.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C537C726AFD76100C8A24D /* icons8-back-100.png */; };
 		F4D14EE526929E650013FCDA /* DetailEventWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D14EE426929E640013FCDA /* DetailEventWebView.swift */; };
 		F4DA4081256CE564002DA9F4 /* DetailCustomerSelectSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA4080256CE564002DA9F4 /* DetailCustomerSelectSingle.swift */; };
 		F4DA4086256CE589002DA9F4 /* DetailCustomerSelectDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA4085256CE589002DA9F4 /* DetailCustomerSelectDate.swift */; };
@@ -136,7 +134,7 @@
 		F413CCEC2567A59C005F5DDF /* DetailChoiceMulti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailChoiceMulti.swift; sourceTree = "<group>"; };
 		F413CCED2567A59D005F5DDF /* DetailViewEventPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewEventPDF.swift; sourceTree = "<group>"; };
 		F413CCEE2567A59F005F5DDF /* DetailAssSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssSchema.swift; sourceTree = "<group>"; };
-		F413CCEF2567A5A1005F5DDF /* DetailAssPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssPhoto.swift; sourceTree = "<group>"; };
+		F413CCEF2567A5A1005F5DDF /* DetailAssPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssPhoto.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		F413CCF02567A5A2005F5DDF /* DetailAssVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssVideo.swift; sourceTree = "<group>"; };
 		F413CCF12567A5A4005F5DDF /* DetailAssBasicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssBasicInfo.swift; sourceTree = "<group>"; };
 		F413CCF22567A5A6005F5DDF /* DetailCustomerInputText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCustomerInputText.swift; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 		F426350D24F60D8B00F24154 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		F4357C1F24F621BB00CA2D8C /* gaitanalysis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gaitanalysis.entitlements; sourceTree = "<group>"; };
 		F439C4712694491700D34F69 /* firebaseAuthUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseAuthUI.swift; sourceTree = "<group>"; };
-		F4834FE2267C820600ADA67C /* bodyFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bodyFront.jpg; path = ../../../../Downloads/bodyFront.jpg; sourceTree = "<group>"; };
 		F486ADD12602178100CBD8DE /* DetailAssInputOtherText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssInputOtherText.swift; sourceTree = "<group>"; };
 		F49A8C0A26A511160095EBF4 /* DetailMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMessage.swift; sourceTree = "<group>"; };
 		F4AB1EEC23151505005A10C8 /* gaitanalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaitanalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +168,6 @@
 		F4AB1F1423151506005A10C8 /* gaitanalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaitanalysisUITests.swift; sourceTree = "<group>"; };
 		F4AB1F1623151506005A10C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C33F082680EC6200113684 /* Rendition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rendition.swift; sourceTree = "<group>"; };
-		F4C537C726AFD76100C8A24D /* icons8-back-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-back-100.png"; path = "../../../../Downloads/icons8-back-100.png"; sourceTree = "<group>"; };
 		F4D14EE426929E640013FCDA /* DetailEventWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventWebView.swift; sourceTree = "<group>"; };
 		F4DA4080256CE564002DA9F4 /* DetailCustomerSelectSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustomerSelectSingle.swift; sourceTree = "<group>"; };
 		F4DA4085256CE589002DA9F4 /* DetailCustomerSelectDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustomerSelectDate.swift; sourceTree = "<group>"; };
@@ -286,8 +282,6 @@
 				F4AB1F0023151506005A10C8 /* Info.plist */,
 				F4357C1F24F621BB00CA2D8C /* gaitanalysis.entitlements */,
 				F4AB1EFB23151506005A10C8 /* Assets.xcassets */,
-				F4C537C726AFD76100C8A24D /* icons8-back-100.png */,
-				F4834FE2267C820600ADA67C /* bodyFront.jpg */,
 				F413C86B25676505005F5DDF /* Common */,
 				F413CD522567ACA4005F5DDF /* gaitanalysis.xcdatamodeld */,
 				F413CD4D2567A6A7005F5DDF /* LaunchScreen.storyboard */,
@@ -472,10 +466,8 @@
 				F413CD2A2567A5D6005F5DDF /* sokuteikai_18112_outline.pdf in Resources */,
 				F413CD232567A5C5005F5DDF /* report_hoko.pdf in Resources */,
 				F413CD462567A660005F5DDF /* Main.storyboard in Resources */,
-				F4834FE3267C820700ADA67C /* bodyFront.jpg in Resources */,
 				F4AB1EFC23151506005A10C8 /* Assets.xcassets in Resources */,
 				F413CD4E2567A6A7005F5DDF /* LaunchScreen.storyboard in Resources */,
-				F4C537C826AFD76200C8A24D /* icons8-back-100.png in Resources */,
 				F413CCA82567A4BB005F5DDF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -851,7 +843,7 @@
 				CODE_SIGN_ENTITLEMENTS = gaitanalysis/gaitanalysis.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WW526DAZF2;
+				DEVELOPMENT_TEAM = B6S8S5X5D2;
 				INFOPLIST_FILE = gaitanalysis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -874,7 +866,7 @@
 				CODE_SIGN_ENTITLEMENTS = gaitanalysis/gaitanalysis.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WW526DAZF2;
+				DEVELOPMENT_TEAM = B6S8S5X5D2;
 				INFOPLIST_FILE = gaitanalysis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -896,7 +888,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3278KP8Z39;
+				DEVELOPMENT_TEAM = B6S8S5X5D2;
 				INFOPLIST_FILE = gaitanalysisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -918,7 +910,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3278KP8Z39;
+				DEVELOPMENT_TEAM = B6S8S5X5D2;
 				INFOPLIST_FILE = gaitanalysisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
