@@ -54,10 +54,10 @@ class DetailAssBasicInfo: UITableViewController {
     }
     
     func setBasicInfo() {
-        cellCustomerName.detailTextLabel?.text = String((appDelegate.selectedUser["customerName"].asString == nil) ? "名前未設定" : appDelegate.selectedUser["customerName"].asString!)
-        cellCustomerBirthDay.detailTextLabel?.text = String(appDelegate.selectedUser["birthDay"].asString!)
-        cellCustomerAge.detailTextLabel?.text = String(appDelegate.selectedUser["age"].asString!)
-        cellCustomerGender.detailTextLabel?.text = String(appDelegate.selectedUser["genderString"].asString!)
+        cellCustomerName.detailTextLabel?.text = String((appDelegate.selectedUser["customerName"].asString == nil) ? "未設定" : appDelegate.selectedUser["customerName"].asString!)
+        cellCustomerBirthDay.detailTextLabel?.text = String((appDelegate.selectedUser["birthDay"].asString == nil) ? "未設定" : appDelegate.selectedUser["birthDay"].asString!)
+        cellCustomerAge.detailTextLabel?.text = String((appDelegate.selectedUser["age"].asString == nil) ? "未設定" : appDelegate.selectedUser["age"].asString!)
+        cellCustomerGender.detailTextLabel?.text = String((appDelegate.selectedUser["genderString"].asString == nil) ? "未設定" : appDelegate.selectedUser["genderString"].asString!)
         
         // The default timeZone for ISO8601DateFormatter is UTC
         let utcISODateFormatter = ISO8601DateFormatter()

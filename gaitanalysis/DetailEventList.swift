@@ -56,7 +56,8 @@ class DetailEventList: UITableViewController {
      テーブルに表示する配列の総数を返す.
      */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.length
+        
+        return list == nil ? 0 : list.length
     }
     /*
      Cellに値を設定する.
