@@ -11,8 +11,8 @@ import Foundation
 class AppConst {
     class var URLPrefix : String {
        //return "http://localhost:5900/api/"
-        //return "https://pga.re-walk.com/api/"
-        return "http://192.168.1.32/rewalk/api/" //外山さんのIP
+        return "https://pga.re-walk.com/api/"
+        //return "http://192.168.1.32/rewalk/api/" //外山さんのIP
         //return "http://192.168.10.19:5900/api/"
        // return "http://14.193.170.59:5900/api/"
     

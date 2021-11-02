@@ -167,6 +167,7 @@
 		F4AB1F1023151506005A10C8 /* gaitanalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gaitanalysisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AB1F1423151506005A10C8 /* gaitanalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaitanalysisUITests.swift; sourceTree = "<group>"; };
 		F4AB1F1623151506005A10C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AF27042705A759007D8597 /* gaitanalysisDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gaitanalysisDebug.entitlements; sourceTree = "<group>"; };
 		F4C33F082680EC6200113684 /* Rendition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rendition.swift; sourceTree = "<group>"; };
 		F4D14EE426929E640013FCDA /* DetailEventWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEventWebView.swift; sourceTree = "<group>"; };
 		F4DA4080256CE564002DA9F4 /* DetailCustomerSelectSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustomerSelectSingle.swift; sourceTree = "<group>"; };
@@ -278,6 +279,7 @@
 		F4AB1EEE23151505005A10C8 /* gaitanalysis */ = {
 			isa = PBXGroup;
 			children = (
+				F4AF27042705A759007D8597 /* gaitanalysisDebug.entitlements */,
 				F413CCA72567A4BB005F5DDF /* GoogleService-Info.plist */,
 				F4AB1F0023151506005A10C8 /* Info.plist */,
 				F4357C1F24F621BB00CA2D8C /* gaitanalysis.entitlements */,
@@ -843,13 +845,15 @@
 				CODE_SIGN_ENTITLEMENTS = gaitanalysis/gaitanalysis.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6S8S5X5D2;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = WW526DAZF2;
 				INFOPLIST_FILE = gaitanalysis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.re-walk.gaitanalysis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -866,13 +870,15 @@
 				CODE_SIGN_ENTITLEMENTS = gaitanalysis/gaitanalysis.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6S8S5X5D2;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = WW526DAZF2;
 				INFOPLIST_FILE = gaitanalysis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.re-walk.gaitanalysis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -931,7 +937,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3278KP8Z39;
+				DEVELOPMENT_TEAM = B6S8S5X5D2;
 				INFOPLIST_FILE = gaitanalysisUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
