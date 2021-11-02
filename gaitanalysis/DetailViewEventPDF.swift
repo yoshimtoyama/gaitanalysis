@@ -8,9 +8,10 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 class DetailViewEventPDF: UIViewController {
-    var webView: UIWebView!
+    var webView: WKWebView!
     var data : Data?
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     let appCommon = AppCommon()
@@ -34,13 +35,14 @@ class DetailViewEventPDF: UIViewController {
         //            let data = Data(base64Encoded: res! as String, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
         
         let rect = CGRect(x: 0,y: barHeight,width: navBarWidth!,height: displayHeight - barHeight)
-        webView = UIWebView(frame: rect)
+        let webConf = WKWebViewConfiguration()
+        webView = WKWebView(frame: rect, configuration: webConf)
         self.view.addSubview(webView)
         
         // データロード.
         //webView.loadData(data!, MIMEType:"application/pdf", textEncodingName:"UTF-8", baseURL:nil)
         //            webView.load(data!, mimeType:"application/pdf", textEncodingName:"UTF-8", baseURL:URL(fileURLWithPath: Bundle.main.bundlePath))
-        webView.load(data!, mimeType: "application/pdf", textEncodingName: "UFT-8", baseURL:URL(fileURLWithPath: Bundle.main.bundlePath))
+        webView.load(data!, mimeType: "application/pdf", characterEncodingName: "UFT-8", baseURL:URL(fileURLWithPath: Bundle.main.bundlePath))
         
         // データ保存
         let paths1 = NSSearchPathForDirectoriesInDomains(

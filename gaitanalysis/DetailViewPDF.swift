@@ -8,9 +8,10 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 class DetailViewPDF: UIViewController {
-    var webView: UIWebView!
+    var webView: WKWebView!
     var data : Data?
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     let appCommon = AppCommon()
@@ -38,7 +39,8 @@ class DetailViewPDF: UIViewController {
         //            let data = Data(base64Encoded: res! as String, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
         
         let rect = CGRect(x: 0,y: barHeight,width: navBarWidth!,height: displayHeight - barHeight)
-        webView = UIWebView(frame: rect)
+        let webConf = WKWebViewConfiguration()
+        webView = WKWebView(frame: rect, configuration: webConf)
         self.view.addSubview(webView)
         
         let string64url = "\(AppConst.URLPrefix)ass/GetAnalysisReportBase64String/\(appDelegate.selectedUser["customerID"].asInt!)/\(appDelegate.selectedAss["assId"].asInt!)"
@@ -47,7 +49,8 @@ class DetailViewPDF: UIViewController {
             AppCommon.alertMessage(controller: self, title: "Error", message: jsonStr)
         }
             if let data = NSData(base64Encoded: jsonStr!, options: NSData.Base64DecodingOptions.ignoreUnknownCharacters) as Data? {
-            self.webView.load(data, mimeType: "application/pdf", textEncodingName: "", baseURL: URL(fileURLWithPath: ""))
+                //self.webView.load(data, mimeType: "application/pdf", textEncodingName: "", baseURL: URL(fileURLWithPath: ""))
+                self.webView.load(data, mimeType: "application/pdf", characterEncodingName: "", baseURL: URL(fileURLWithPath: ""))
             }
         
     }
@@ -84,7 +87,8 @@ class DetailViewPDF: UIViewController {
     
     
     @IBAction func print(_ sender: UIBarButtonItem) {
-        if let guide_url = Bundle.main.url(forAuxiliaryExecutable: webView.request!.url!.absoluteString)
+        //if let guide_url = Bundle.main.url(forAuxiliaryExecutable: webView.request!.url!.absoluteString)
+        if let guide_url = Bundle.main.url(forAuxiliaryExecutable: webView.url!.absoluteString)
         {
             if UIPrintInteractionController.canPrint(guide_url) {
                 let printInfo = UIPrintInfo(dictionary: nil)
